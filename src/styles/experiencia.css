@@ -1,0 +1,112 @@
+.experiencias {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 40px 20px;
+   min-height: 100vh;
+
+   & .experiencias-container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+   }
+
+   & .experiencia {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+      view-timeline-name: --reveal;
+      animation-name: show;
+      animation-fill-mode: both;
+      animation-timeline: --reveal;
+      animation-range: entry 25% cover 50%;
+
+      & img {
+         width: 30px;
+         height: 30px;
+      }
+
+      & h3 {
+         color: var(--primary-color);
+      }
+
+      & .experiencia-info {
+         display: flex;
+         flex-direction: column;
+         gap: 2px;
+      }
+
+      & .experiencia-description {
+         font-weight: lighter;
+      }
+
+      & .experiencia-time {
+         color: var(--primary-color);
+      }
+   }
+}
+
+.experiencias-title {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-left: 20px;
+
+   & img {
+      width: 24px;
+   }
+}
+
+@media (min-width: 768px) {
+   .experiencias {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      min-height: 70vh;
+      max-width: 70vw;
+   }
+
+   .experiencia {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 20px;
+   }
+
+   .experiencia-progreso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      view-timeline-name: --reveal;
+      animation-name: show;
+      animation-fill-mode: both;
+      animation-timeline: --reveal;
+      animation-range: entry 25% cover 50%;
+
+      & .linea {
+         width: 2px;
+         height: 50px;
+         background-color: var(--gray-color);
+      }
+
+      & .linea-medio {
+         width: 2px;
+         height: 300px;
+         background-color: var(--gray-color);
+      }
+
+      & .circulo {
+         width: 15px;
+         height: 15px;
+         border-radius: 50%;
+         background-color: var(--primary-color);
+      }
+   }
+
+}

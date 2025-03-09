@@ -1,0 +1,42 @@
+.logros {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 20px;
+   padding: 40px 20px;
+
+   & .logros-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & img {
+         width: 24px;
+      }
+   }
+
+   & .certificados-content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      & .certificado {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 10px;
+
+         & img {
+            border: thin solid #529CC1;
+            view-timeline-name: --reveal;
+            animation-name: show;
+            animation-fill-mode: both;
+            animation-timeline: --reveal;
+            animation-range: entry 25% cover 50%;
+         }
+      }
+   }
+}

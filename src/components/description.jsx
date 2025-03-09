@@ -1,7 +1,7 @@
 import '../styles/description.css'
 import perfil from '../assets/foto-perfil.png'
 import linkedin from '../assets/redes/logo-in.svg'
-import gmail from '../assets/redes/logo-gmail.svg'
+import wsp from '../assets/redes/logo-wsp.svg'
 
 export default function Description() {
   return (
@@ -43,11 +43,14 @@ export default function Description() {
         <div class="profile-contact">
           <span>Contáctame:</span>
           <div class="profile-redes">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/cesar-ortega-dev/"
+              target="_blanck"
+            >
               <img src={linkedin} alt="LinkedIn" />
             </a>
-            <a href="#">
-              <img src={gmail} alt="Gmail" />
+            <a href="https://wa.me/942280984" target="_blanck">
+              <img src={wsp} alt="LinkedIn" />
             </a>
           </div>
         </div>

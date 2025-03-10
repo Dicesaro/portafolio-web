@@ -10,17 +10,22 @@ export default function Contacto() {
           name="Email"
           id="email"
           type="email"
-          autoComplete="cesarluis4056@gmail.com"
-          placeholder="cesarluis4056@gmail.com"
+          placeholder="@gmail, @outlook, ..."
         />
         <label for="name">Nombre</label>
-        <input name="Name" id="name" type="text" />
+        <input
+          name="Name"
+          id="name"
+          type="text"
+          placeholder="Ingresa tu nombre ..."
+        />
         <label for="message">Asunto</label>
         <textarea
           name="Message"
           id="message"
           cols="30"
           rows="10"
+          placeholder=" ... "
         ></textarea>
         <button type="submit">Enviar</button>
       </form>
